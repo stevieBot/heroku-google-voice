@@ -1,0 +1,44 @@
+{
+  "actions": [
+    {
+      "description": "Default Welcome Intent",
+      "name": "MAIN",
+      "fulfillment": {
+        "conversationName": "welcome to miss Macys"
+      },
+      "intent": {
+        "name": "actions.intent.MAIN",
+        "trigger": {
+          "queryPatterns": [
+            "talk to miss Macys"]       
+        }
+      }
+    },
+	{
+        "description": "Rasa Intent",
+        "name": "TEXT",
+        "fulfillment": {
+          "conversationName": "rasa_intent"
+        },
+        "intent": {
+          "name": "actions.intent.TEXT",
+          "trigger": {
+            "queryPatterns":[]
+          }
+        }
+      }],
+	"conversations": {
+      "welcome": {
+        "name": "welcome to miss Macys",
+        "url": "https://bdc9aa22.ngrok.io/webhooks/google_home/webhook",
+        "fulfillmentApiVersion": 2
+    },
+      "rasa_intent": {
+        "name": "rasa_intent",
+        "url": "https://bdc9aa22.ngrok.io/webhooks/google_home/webhook",
+        "fulfillmentApiVersion": 2
+    }  
+
+  },
+  "locale": "en"
+}

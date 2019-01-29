@@ -1,0 +1,91 @@
+%YAML 1.1
+---
+actions:
+- utter_greet
+- utter_goodbye
+- utter_thanks
+- utter_what_radius
+- utter_rating
+- utter_opening_hours
+- utter_address
+- utter_no_results
+- utter_store_location
+- action_place_search
+- utter_store_location_in_sf
+- utter_ask_more
+- utter_order_tracking
+config:
+  store_entities_as_slots: true
+entities:
+- query
+- number
+intents:
+- greet:
+    use_entities: true
+- thanks:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- opening_hours:
+    use_entities: true
+- address:
+    use_entities: true
+- rating:
+    use_entities: true
+- inform:
+    use_entities: true
+- business_hour:
+    use_entities: true
+- location:
+    use_entities: true
+- order_status:
+    use_entities: true
+slots:
+  address:
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  location_match:
+    initial_value: null
+    type: rasa_core.slots.CategoricalSlot
+    values:
+    - none
+    - one
+  number:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  opening_hours:
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  query:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  rating:
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+templates:
+  utter_address:
+  - text: The address is {address}.
+  utter_ask_more:
+  - text: Do you have anything else I can help ?
+  utter_default:
+  - text: I don't understand your request. But I keep learning.
+  utter_goodbye:
+  - text: Talk to you later!
+  utter_greet:
+  - text: Hello! I am Macys shopping assistant. I can help you finding Macys local
+      store, store hours and on-going promotions. Also, I can track your latest order.
+      How can I help you ?
+  utter_no_results:
+  - text: Sorry, I couldn't find anything.
+  utter_opening_hours:
+  - text: The place is {opening_hours}
+  utter_order_tracking:
+  - text: Your order has been shipped. It will be delivered by this Saturday.
+  utter_rating:
+  - text: The rating is {rating}
+  utter_store_location_in_sf:
+  - text: 170 O'Farrell Street, San Francisco, opens from 9 am to 10 pm.
+  utter_thanks:
+  - text: You are very welcome.
+  utter_what_radius:
+  - text: Within what radius?

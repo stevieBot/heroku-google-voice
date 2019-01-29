@@ -1,0 +1,81 @@
+slots:
+ query:
+   type: text
+ number:
+   type: text
+ rating:
+   type: unfeaturized
+ address:
+   type: unfeaturized
+ opening_hours:
+   type: unfeaturized
+ location_match:
+   type: categorical
+   values:
+   - none
+   - one
+location:
+  type: text
+
+
+
+
+intents:
+ - greet
+ - thanks
+ - goodbye
+ - opening_hours
+ - address
+ - rating
+ - inform
+ - business_hour
+ - location
+ - order_status
+ 
+ 
+
+entities:
+ - query
+ - number
+
+templates:
+  utter_greet:
+    - "Hello! I am Macys shopping assistant. I can help you finding Macys local store, store hours and on-going promotions. Also, I can track your latest order. How can I help you ?"
+  utter_goodbye:
+    - "Talk to you later!"
+  utter_thanks:
+    - "You are very welcome."
+  utter_what_radius:
+    - "Within what radius?"
+  utter_rating:
+    - "The rating is {rating}"
+  utter_address:
+    - "The address is {address}."
+  utter_opening_hours:
+    - "The place is {opening_hours}"
+  utter_no_results:
+    - "Sorry, I couldn't find anything."
+  utter_store_location_in_sf:
+    - "170 O'Farrell Street, San Francisco, opens from 9 am to 10 pm."
+  utter_ask_more:
+    - "Do you have anything else I can help ?"
+  utter_order_tracking:
+    - text: Your order has been shipped. It will be delivered by this Saturday.
+  utter_default:
+    - text: I don't understand your request. But I keep learning.
+  
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_thanks
+  - utter_what_radius
+  - utter_rating
+  - utter_opening_hours
+  - utter_address
+  - utter_no_results
+  - utter_store_location
+  - action_place_search
+  - utter_store_location_in_sf
+  - utter_ask_more
+  - utter_order_tracking
+  

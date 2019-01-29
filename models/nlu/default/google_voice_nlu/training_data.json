@@ -1,0 +1,113 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "Hello"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "heya"
+      },
+      {
+        "intent": "greet",
+        "text": "howdy"
+      },
+      {
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see ya"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see you later"
+      },
+      {
+        "intent": "location",
+        "text": "Where is Macys store ?"
+      },
+      {
+        "intent": "location",
+        "text": "Where is Macy's store ?"
+      },
+      {
+        "intent": "location",
+        "text": "Where is Macy's store in San Francisco ?"
+      },
+      {
+        "intent": "location",
+        "text": "Where is the closest Macy's store ?"
+      },
+      {
+        "intent": "location",
+        "text": "Where is Macy's local store ?"
+      },
+      {
+        "intent": "location",
+        "text": "Tell me Macys address ?"
+      },
+      {
+        "intent": "location",
+        "text": "Where can I return the items ?"
+      },
+      {
+        "intent": "business_hour",
+        "text": "What is Macys business hours ?"
+      },
+      {
+        "intent": "business_hour",
+        "text": "What time Macys opens ?"
+      },
+      {
+        "intent": "business_hour",
+        "text": "What time Macys closes ?"
+      },
+      {
+        "intent": "order_status",
+        "text": "Where is my order ?"
+      },
+      {
+        "intent": "order_status",
+        "text": "Can you track my order ?"
+      },
+      {
+        "intent": "order_status",
+        "text": "Tell me where my order is"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}

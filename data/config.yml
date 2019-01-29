@@ -1,0 +1,5 @@
+pipeline:
+- name: "nlp_spacy"
+- name: "tokenizer_spacy"
+- name: "intent_featurizer_spacy"
+- name: "intent_classifier_sklearn"
